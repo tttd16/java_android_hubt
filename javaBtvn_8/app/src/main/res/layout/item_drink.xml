@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imgDrink"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/imagestc"
+        android:contentDescription="Drink Image"
+        android:padding="4dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/tvDrinkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trà chanh"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3E2723" />
+
+        <TextView
+            android:id="@+id/tvDrinkPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15,000 VNĐ"
+            android:textSize="14sp"
+            android:textColor="#D32F2F"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SL:"
+            android:textSize="14sp"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:text="0"
+            android:gravity="center"
+            android:background="@android:drawable/editbox_background"
+            android:padding="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
